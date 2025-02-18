@@ -1,3 +1,4 @@
+const RESUME_LINK = "https://drive.google.com/file/d/1Rp_EM1DioCPwIwJ-rlzz3D96_K1Nivxg/view?usp=sharing";
 const COMMANDS = {
   commands:
     'Supported commands: <span class="code">about</span>, <span class="code">skills</span>, <span class="code">education</span>, <span class="code">resume</span>, <span class="code">contact</span>, <span class="code">coding_profiles</span>.',
@@ -10,7 +11,7 @@ const COMMANDS = {
   contact:
     "Number: <a href='tel:+919340542018' class='success link'>+919340542018</a><br> Email: <a href='mailto:adityasonani19@gmail.com' class='success link'>adityasonani19@gmail.com</a>",
   resume:
-    "<a href='https://drive.google.com/file/d/1Rp_EM1DioCPwIwJ-rlzz3D96_K1Nivxg/view?usp=sharing' target = '_blank' class='success link'>Click Here to View Resume</a>",
+    `<a href='${RESUME_LINK}' target = '_blank' class='success link'>Click Here to View Resume</a>`,
   coding_profiles:
     "LeetCode: Top 9% (Rating: 1761) - <a target='_blank' href='https://leetcode.com/adityasonani/' class='success link '>adityasonani</a> <br>Codechef: 4 star rated (Rating: 1876) - <a target='_blank' href='https://codechef.com/users/adityasonani' class='success link'>adityasonani</a> <br>Codeforces: Specialist (Rating: 1404) - <a target='_blank' href='https://codeforces.com/profile/adityasonani' class='success link '>adityasonani</a> <br> GitHub:  <a target='_blank' href='https://github.com/adityasonani' class='success link '>adityasonani</a>",
 };
@@ -20,6 +21,10 @@ const app = () => {
   userInput = document.getElementById("userInput");
   terminalOutput = document.getElementById("terminalOutput");
   document.getElementById("dummyKeyboard").focus();
+  const resumeElements = document.querySelectorAll(".resume a");
+  resumeElements.forEach(el => {
+      el.href = RESUME_LINK;
+  });
 };
 
 const execute = (input) => {
