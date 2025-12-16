@@ -1,4 +1,4 @@
-const RESUME_LINK = "https://drive.google.com/file/d/1K6o3SQIanyuVGrMP9MdYy1f-awRUdE0s/view";
+const RESUME_LINK = "https://drive.google.com/file/d/1ui9qp91hJtL2EUVxz3_xIsxXEVWw9XOM/view";
 const COMMANDS = {
   commands:
     'Supported commands: <span class="code">about</span>, <span class="code">skills</span>, <span class="code">education</span>, <span class="code">resume</span>, <span class="code">contact</span>, <span class="code">coding_profiles</span>.',
